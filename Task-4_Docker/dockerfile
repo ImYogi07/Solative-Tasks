@@ -1,0 +1,8 @@
+# Use the official NGINX image as the base image
+FROM nginx:latest
+
+# Copy the content of the index.html to the NGINX document root directory
+COPY ./index.html /usr/share/nginx/html/
+
+# Expose port 80 to allow outside access to our web application
+EXPOSE 80
